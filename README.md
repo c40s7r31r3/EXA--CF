@@ -35,4 +35,25 @@ una ves dentro del EC2 ejecutamos el comando
     y copiamos la clave publica para generar la key en el github
 
   una vez genereda la KEY ejecutamos el comando dentro del EC2
-- git clone 
+- git clone git@github.com:c40s7r31r3/EXA--CF.git (coigo ssh del repositorio)
+  una vez clonado el repositorio comenzamos a trabajar en nuestra aplicación
+
+REQUISITOS TECNICOS INSTALAR LAS SIGUIENTES LIBRERIAS
+python, pip, flask, flask-testing, 
+
+sudo yum update  
+
+sudo yum install git -y ( para instalar git hub en el EC2)
+
+sudo yum install nodejs
+
+sudo yum install python3
+
+sudo yum install python3 pip
+
+pip install flask
+
+pip install Flask-Testing
+
+python3 -m pip install flake8
+
