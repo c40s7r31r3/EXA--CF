@@ -57,3 +57,13 @@ pip install Flask-Testing
 
 python3 -m pip install flake8
 
+DESCRIPCIÓN DEL USO DE ARCHIVOS
+
+app.py : es el que llama al formulario.html y al formulario.html
+formulario.html : es el que muestra el formulario para rellenar con los datos que queramos
+resultado.html : muestra el resultado del calculo de lso salarios del empleado y del gerente
+
+ejecutamos el comando python3 app.py
+
+para poder ver nuestra aplicación buscamos la IP de nuestro EC2 seguido de :5000 
+
