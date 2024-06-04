@@ -97,7 +97,7 @@ sudo service httpd restart
 
 - · Elige la opcion “easy create”, motor de base de datos “mysql”, tamaño “free trial”, en credentials elige “self managed” pon tu contraseña y guardala, En la opcion de “setup EC2 connection “elige tu instancia que has creado antes.
 
-**Paso 5. Crear tabla en RDS:**
+**Crear tabla en RDS:**
 
 - · Conectarte a la base de datos desde las ec2
     - o sudo systemctl start mysqld
