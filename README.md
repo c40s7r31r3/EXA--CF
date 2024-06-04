@@ -57,6 +57,61 @@ pip install Flask-Testing
 
 python3 -m pip install flake8
 
+sudo yum update -y
+
+sudo yum install httpd -y
+
+ sudo service httpd start
+
+ sudo chkconfig httpd on
+
+Navega al directorio del servidor web  cd /var/www/html
+
+Ejectuar los siguientes comandos
+
+sudo yum install php php-cli php-json php-mbstring -y
+
+sudo  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+
+ sudo php composer-setup.php
+
+sudo php -r "unlink('composer-setup.php');"
+
+sudo php composer.phar require aws/aws-sdk-php
+
+sudo yum install php-mysqlnd
+
+sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+
+sudo dnf install mysql80-community-release-el9-1.noarch.rpm -y
+
+sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
+
+sudo dnf install mysql-community-client -y
+
+sudo dnf install mysql-community-server -y
+
+sudo service httpd restart
+
+**Crear RDS:**
+
+- · Elige la opcion “easy create”, motor de base de datos “mysql”, tamaño “free trial”, en credentials elige “self managed” pon tu contraseña y guardala, En la opcion de “setup EC2 connection “elige tu instancia que has creado antes.
+
+**Paso 5. Crear tabla en RDS:**
+
+- · Conectarte a la base de datos desde las ec2
+    - o sudo systemctl start mysqld
+    - o sudo systemctl enable mysqld
+    - o sudo systemctl status mysqld
+    - o mysql -u admin -p -h goku.culjsna7lgqp.us-east-1.rds.amazonaws.com
+- · Una vez conectado Crea la base de datos desde la EC2
+
+CREATE DATABASE IF NOT EXISTS goku;
+
+USE goku;
+
+CREATE TABLE IF NOT EXISTS productos (    id INT AUTO_INCREMENT PRIMARY KEY,    nombre VARCHAR(255) NOT NULL,    precio DECIMAL(10,2) NOT NULL);
+
 DESCRIPCIÓN DEL USO DE ARCHIVOS
 
 app.py : es el que llama al formulario.html y al formulario.html
