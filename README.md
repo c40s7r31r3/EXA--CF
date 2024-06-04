@@ -1,5 +1,5 @@
 # EXA--CF
-\huge#####################README########################### 
+\huge#####################   README   ########################### 
 
 EC2
 ingreseamos al EC2 paraa crear una instancia con Imágenes de máquina de Amazon (AMI) Amazon Linux 2023
@@ -100,17 +100,11 @@ sudo service httpd restart
 **Crear tabla en RDS:**
 
 - · Conectarte a la base de datos desde las ec2
-    - o sudo systemctl start mysqld
-    - o sudo systemctl enable mysqld
-    - o sudo systemctl status mysqld
-    - o mysql -u admin -p -h goku.culjsna7lgqp.us-east-1.rds.amazonaws.com
+    - sudo systemctl start mysqld
+    - sudo systemctl enable mysqld
+    - sudo systemctl status mysqld
+    - mysql -u admin -p -h goku.culjsna7lgqp.us-east-1.rds.amazonaws.com
 - · Una vez conectado Crea la base de datos desde la EC2
-
-CREATE DATABASE IF NOT EXISTS goku;
-
-USE goku;
-
-CREATE TABLE IF NOT EXISTS productos (    id INT AUTO_INCREMENT PRIMARY KEY,    nombre VARCHAR(255) NOT NULL,    precio DECIMAL(10,2) NOT NULL);
 
 DESCRIPCIÓN DEL USO DE ARCHIVOS
 
