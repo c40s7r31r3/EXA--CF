@@ -1,6 +1,8 @@
 # EXA--CF
-#README
-EC2
+# README
+
+
+# EC2
 ingreseamos al EC2 paraa crear una instancia con Imágenes de máquina de Amazon (AMI) Amazon Linux 2023
 con tipo de instancia t.3 small
 creamos par de claves 
